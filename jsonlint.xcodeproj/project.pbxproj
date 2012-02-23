@@ -1,0 +1,235 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CF93A78F14F6032C006B9257 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF93A78E14F6032C006B9257 /* Foundation.framework */; };
+		CF93A79214F6032C006B9257 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CF93A79114F6032C006B9257 /* main.m */; };
+		CF93A79614F6032C006B9257 /* jsonlint.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = CF93A79514F6032C006B9257 /* jsonlint.1 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CF93A78814F6032C006B9257 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				CF93A79614F6032C006B9257 /* jsonlint.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		CF93A78A14F6032C006B9257 /* jsonlint */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = jsonlint; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF93A78E14F6032C006B9257 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CF93A79114F6032C006B9257 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CF93A79414F6032C006B9257 /* jsonlint-Prefix.pch */ = {isa = PBXFileReference; path = "jsonlint-Prefix.pch"; sourceTree = "<group>"; };
+		CF93A79514F6032C006B9257 /* jsonlint.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = jsonlint.1; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CF93A78714F6032C006B9257 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF93A78F14F6032C006B9257 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CF93A77F14F6032C006B9257 = {
+			isa = PBXGroup;
+			children = (
+				CF93A79014F6032C006B9257 /* jsonlint */,
+				CF93A78D14F6032C006B9257 /* Frameworks */,
+				CF93A78B14F6032C006B9257 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CF93A78B14F6032C006B9257 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CF93A78A14F6032C006B9257 /* jsonlint */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF93A78D14F6032C006B9257 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CF93A78E14F6032C006B9257 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CF93A79014F6032C006B9257 /* jsonlint */ = {
+			isa = PBXGroup;
+			children = (
+				CF93A79114F6032C006B9257 /* main.m */,
+				CF93A79514F6032C006B9257 /* jsonlint.1 */,
+				CF93A79314F6032C006B9257 /* Supporting Files */,
+			);
+			path = jsonlint;
+			sourceTree = "<group>";
+		};
+		CF93A79314F6032C006B9257 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CF93A79414F6032C006B9257 /* jsonlint-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CF93A78914F6032C006B9257 /* jsonlint */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF93A79914F6032C006B9257 /* Build configuration list for PBXNativeTarget "jsonlint" */;
+			buildPhases = (
+				CF93A78614F6032C006B9257 /* Sources */,
+				CF93A78714F6032C006B9257 /* Frameworks */,
+				CF93A78814F6032C006B9257 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = jsonlint;
+			productName = jsonlint;
+			productReference = CF93A78A14F6032C006B9257 /* jsonlint */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CF93A78114F6032C006B9257 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = NHN;
+			};
+			buildConfigurationList = CF93A78414F6032C006B9257 /* Build configuration list for PBXProject "jsonlint" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF93A77F14F6032C006B9257;
+			productRefGroup = CF93A78B14F6032C006B9257 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CF93A78914F6032C006B9257 /* jsonlint */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CF93A78614F6032C006B9257 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF93A79214F6032C006B9257 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		CF93A79714F6032C006B9257 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		CF93A79814F6032C006B9257 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		CF93A79A14F6032C006B9257 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "jsonlint/jsonlint-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CF93A79B14F6032C006B9257 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "jsonlint/jsonlint-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CF93A78414F6032C006B9257 /* Build configuration list for PBXProject "jsonlint" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF93A79714F6032C006B9257 /* Debug */,
+				CF93A79814F6032C006B9257 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF93A79914F6032C006B9257 /* Build configuration list for PBXNativeTarget "jsonlint" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF93A79A14F6032C006B9257 /* Debug */,
+				CF93A79B14F6032C006B9257 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CF93A78114F6032C006B9257 /* Project object */;
+}
