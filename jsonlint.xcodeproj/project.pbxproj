@@ -10,6 +10,7 @@
 		CF93A78F14F6032C006B9257 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF93A78E14F6032C006B9257 /* Foundation.framework */; };
 		CF93A79214F6032C006B9257 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CF93A79114F6032C006B9257 /* main.m */; };
 		CF93A79614F6032C006B9257 /* jsonlint.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = CF93A79514F6032C006B9257 /* jsonlint.1 */; };
+		CF93A7A114F6079A006B9257 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = CF93A79F14F6079A006B9257 /* JSONKit.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,8 +30,12 @@
 		CF93A78A14F6032C006B9257 /* jsonlint */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = jsonlint; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF93A78E14F6032C006B9257 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CF93A79114F6032C006B9257 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		CF93A79414F6032C006B9257 /* jsonlint-Prefix.pch */ = {isa = PBXFileReference; path = "jsonlint-Prefix.pch"; sourceTree = "<group>"; };
+		CF93A79414F6032C006B9257 /* jsonlint-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "jsonlint-Prefix.pch"; sourceTree = "<group>"; };
 		CF93A79514F6032C006B9257 /* jsonlint.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = jsonlint.1; sourceTree = "<group>"; };
+		CF93A79D14F6079A006B9257 /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CHANGELOG.md; sourceTree = "<group>"; };
+		CF93A79E14F6079A006B9257 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		CF93A79F14F6079A006B9257 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
+		CF93A7A014F6079A006B9257 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +53,7 @@
 		CF93A77F14F6032C006B9257 = {
 			isa = PBXGroup;
 			children = (
+				CF93A79C14F6077D006B9257 /* JSONKit */,
 				CF93A79014F6032C006B9257 /* jsonlint */,
 				CF93A78D14F6032C006B9257 /* Frameworks */,
 				CF93A78B14F6032C006B9257 /* Products */,
@@ -86,6 +92,17 @@
 				CF93A79414F6032C006B9257 /* jsonlint-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CF93A79C14F6077D006B9257 /* JSONKit */ = {
+			isa = PBXGroup;
+			children = (
+				CF93A79D14F6079A006B9257 /* CHANGELOG.md */,
+				CF93A7A014F6079A006B9257 /* README.md */,
+				CF93A79E14F6079A006B9257 /* JSONKit.h */,
+				CF93A79F14F6079A006B9257 /* JSONKit.m */,
+			);
+			path = JSONKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF93A79214F6032C006B9257 /* main.m in Sources */,
+				CF93A7A114F6079A006B9257 /* JSONKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,7 +168,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -161,14 +179,14 @@
 					"$(inherited)",
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_VERSION = "";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = macosx;
+				SDKROOT = macosx10.6;
 			};
 			name = Debug;
 		};
@@ -176,18 +194,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_VERSION = "";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
-				SDKROOT = macosx;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx10.6;
 			};
 			name = Release;
 		};
