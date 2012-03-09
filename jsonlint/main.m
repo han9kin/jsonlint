@@ -28,7 +28,7 @@ static int gShowOutput    = 1;
 
 void PrintVersion()
 {
-    printf("jsonlint version %s\n", kVersion, kCopyright);
+    printf("jsonlint version %s\n", kVersion);
     exit(0);
 }
 
@@ -112,7 +112,7 @@ NSString *LintDescription(const char *aString, size_t aLength, NSError *aError)
      */
     for (i = sLine - 1; ((i >= 0) && (i >= (sLine - gNumberOfLines))); i--)
     {
-        [sResult addObject:[NSString stringWithFormat:@"%10d: %@", (i + 1), [sLines objectAtIndex:i]]];
+        [sResult addObject:[NSString stringWithFormat:@"%10d: %@", (i + 1), [[sLines objectAtIndex:i] stringByReplacingOccurrencesOfString:@"\t" withString:@" "]]];
     }
 
     return [[[sResult reverseObjectEnumerator] allObjects] componentsJoinedByString:@"\n"];
